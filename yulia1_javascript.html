@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas dan keliling lingkaran js.Yulia ananda siregar</title>
+   
+    <script>
+        function hasil(){
+            let r = Number(document.getElementById("jari2").value);
+
+            let luaslingkaran = Math.PI * r * r;
+            let kelilinglingkaran= 2*Math.PI * r;
+
+            console.log(r);
+            console.log(luaslingkaran);
+            console.log(kelilinglingkaran);
+
+            document.getElementById("luas").value=luaslingkaran;
+            document.getElementById("keliling").value=kelilinglingkaran;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h3>jari-jari lingkaran</h3>
+        <input type="text" id="jari2" onchange="hasil()">
+    </div>
+    
+    <div>
+        <h3>luas lingkaran</h3>
+        <input type="text" id="luas">
+    </div>
+   <div>
+        <h3>kelilinglingkaran lingkaran</h3>
+        <input type="text" id="keliling">
+   </div>
+    
+</body>
+</html>
